@@ -40,10 +40,18 @@ component P1d is port( --Declaración del banco de registros
         data1_rd: out std_logic_vector (31 downto 0); 
         data2_rd: out std_logic_vector (31 downto 0) 
     );
+    
 end component;
-    signal clk_rg, rst_rg, wr_rg: std_logic;
+   signal clk_rg, rst_rg, wr_rg: std_logic;
    signal reg1_rd_rg, reg2_rd_rg, reg_wr_rg: std_logic_vector (4 downto 0);
    signal data_wr_rg, data1_rd_rg, data2_rd_rg: std_logic_vector (31 downto 0);
+   signal Special: std_logic_vector(5 downto 0);
+   signal sign_ext, EX_sign_ext: std_logic_vector (31 downto 0); --Registro de segmentacion
+   --Juraria que una de las 2 señales de arriba no es necesaria
+   signal EX_PC_4: std_logic_vector(31 downto 0); --Registro de segmentacion
+   signal RegDst, ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch: std_logic;
+   signal AluOp: std_logic_vector(2 downto 0);
+   signal Reg_destino0, Reg_destino1: std_logic_vector (4 downto 0);
 ---------Fin Sección Instruction Decode---------
 begin 	
 Reg_bank: p1d port map( --Connexión del banco de registros
@@ -95,7 +103,117 @@ reg_IF_ID:      process(Clk,Reset)
                         Instruction <= I_DataIn;
                     end if;
                 end process;
+                
 -------------------------------------------------------------------------------------------------------------------------
+--Fetch/ID
+-------------------------------------------------------------------------------------------------------------------------
+
+--Definición de Unidad de extensión de signo.
+process (Instruction)  
+    --Confirmar lista de sensibilidad y no haber extendido al reves, o tomado los bits que no eran (31 a 15) o (15 a 0)
+begin
+    if (Instruction(15) = '1') then
+    sign_ext <=  x"FFFF" & Instruction(15 downto 0);
+    else
+    sign_ext <=  x"0000" & Instruction(15 downto 0);
+    end if;
+end process;
+--CONFIRMAR QUE NO HAYA HECHO COSAS AL REVES
+
+--Definición de Unidad de control, todo va a parar al registro de segmentación
+process (Instruction)
+begin
+    Special <= Instruction(31 downto 26);
+    --Como pingo hago un case
+    case Special is
+   when "000000" => -- R-Type
+       RegDst <= '1';
+       ALUSrc <= '0';
+       MemtoReg <= '0';
+       RegWrite <= '1';
+       MemRead <= '0';
+       MemWrite <= '0';
+       Branch <= '0';
+       AluOp <= "010";  
+       	
+   when "100011" => -- LW
+       RegDst <= '0';
+       ALUSrc <= '1';
+       MemtoReg <= '1';
+       RegWrite <= '1';
+       MemRead <= '1';
+       MemWrite <= '0';
+       Branch <= '0';
+       AluOp <= "000";
+       
+   when "101011" => -- SW
+       RegDst <= '1';
+       ALUSrc <= '1';
+       MemtoReg <= '0';
+       RegWrite <= '0';
+       MemRead <= '0';
+       MemWrite <= '1';
+       Branch <= '0';
+       AluOp <= "000";
+       
+   when "000100" => -- BEQ
+       RegDst <= '1';
+       ALUSrc <= '0';
+       MemtoReg <= '0';
+       RegWrite <= '0';
+       MemRead <= '0';
+       MemWrite <= '0';
+       Branch <= '1';
+       AluOp <= "001";
+   
+   when "001111" => -- LUI
+       RegDst <= '0';
+       ALUSrc <= '1';
+       MemtoReg <= '0';
+       RegWrite <= '1';
+       MemRead <= '0';
+       MemWrite <= '0';
+       Branch <= '0';
+       AluOp <= "011";
+       
+    when "001000" => -- ADDI
+       RegDst <= '0';
+       ALUSrc <= '1';
+       MemtoReg <= '0';
+       RegWrite <= '1';
+       MemRead <= '0';
+       MemWrite <= '0';
+       Branch <= '0';
+       AluOp <= "000";
+       
+    when "001100" => -- ANDI
+       RegDst <= '0';
+       ALUSrc <= '1';
+       MemtoReg <= '0';
+       RegWrite <= '1';
+       MemRead <= '0';
+       MemWrite <= '0';
+       Branch <= '0';
+       AluOp <= "100";
+       
+    when "001101" => -- ORI
+       RegDst <= '0';
+       ALUSrc <= '1';
+       MemtoReg <= '0';
+       RegWrite <= '1';
+       MemRead <= '0';
+       MemWrite <= '0';
+       Branch <= '0';
+       AluOp <= "101";
+    --when others => Tener cuidado y ocnsultar poe el others
+    end case;
+end process;
+
+--Registros faltantes del registro de Segmentación  PARA BOLUDO, ES UN PROCESO QUE DEPENDE DEL CLOCK, PORQUE ES UN REGISTROOOOOOO
+Reg_destino0 <= Instruction(20 downto 16);
+Reg_destino1 <= Instruction(15 downto 11);
+EX_PC_4 <= ID_PC_4; --CREO, que esto iría al proceso del reg. de segmentacion.
+
 
 -------------------------------------------------------------------------------------------------------------------------              
 end processor_arq;
