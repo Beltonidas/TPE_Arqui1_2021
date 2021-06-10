@@ -36,7 +36,7 @@ entity p1d is
 --  Port ( );
     Port(
     clk: in std_logic;
-    rst: std_logic;
+    rst: in std_logic;
     wr: in std_logic;
     reg1_rd: in std_logic_vector (4 downto 0);
     reg2_rd: in std_logic_vector (4 downto 0);

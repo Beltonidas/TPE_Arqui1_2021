@@ -42,7 +42,7 @@ component P1d is port( --Declaración del banco de registros
     );
     
 end component;
-   signal clk_rg, rst_rg, wr_rg: std_logic;
+   signal rst_rg, wr_rg: std_logic;
    signal reg1_rd_rg, reg2_rd_rg, reg_wr_rg: std_logic_vector (4 downto 0);
    signal data_wr_rg, data1_rd_rg, data2_rd_rg: std_logic_vector (31 downto 0);
    signal Special: std_logic_vector(5 downto 0);
@@ -53,11 +53,16 @@ end component;
    signal AluOp: std_logic_vector(2 downto 0);
    signal Reg_destino0, Reg_destino1: std_logic_vector (4 downto 0);
 ---------Fin Sección Instruction Decode---------
+---------Inicio sección Execution--------------
+------------fin sección Execution--------------
+---------Inicio sección Write Back--------------
+    signal WB_RegWrite: std_logic;
+------------fin sección Write Back--------------
 begin 	
 Reg_bank: p1d port map( --Connexión del banco de registros
-        clk => clk_rg,
+        clk => Clk,
         rst => rst_rg,
-        wr  => wr_rg,
+        wr  => WB_RegWrite, --ID_PC_4
         reg1_rd => reg1_rd_rg,
         reg2_rd => reg2_rd_rg,
         reg_wr  => reg_wr_rg,
@@ -124,7 +129,6 @@ end process;
 process (Instruction)
 begin
     Special <= Instruction(31 downto 26);
-    --Como pingo hago un case
     case Special is
    when "000000" => -- R-Type
        RegDst <= '1';
@@ -205,14 +209,15 @@ begin
        MemWrite <= '0';
        Branch <= '0';
        AluOp <= "101";
-    --when others => Tener cuidado y ocnsultar poe el others
+    --when others => Tener cuidado y ocnsultar por el others
     end case;
 end process;
 
 --Registros faltantes del registro de Segmentación  PARA BOLUDO, ES UN PROCESO QUE DEPENDE DEL CLOCK, PORQUE ES UN REGISTROOOOOOO
+--NO Olvidarse de hacer la asignacion a los registros ded segmentacion de id/ex de todos los valores de la unidad de control
 Reg_destino0 <= Instruction(20 downto 16);
 Reg_destino1 <= Instruction(15 downto 11);
-EX_PC_4 <= ID_PC_4; --CREO, que esto iría al proceso del reg. de segmentacion.
+EX_PC_4 <= ID_PC_4; --CREO, que esto iría al proceso del reg. de segmentacion. --sep
 
 
 -------------------------------------------------------------------------------------------------------------------------              
