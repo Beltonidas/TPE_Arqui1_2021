@@ -213,6 +213,24 @@ begin
     end case;
 end process;
 
+reg_ID_EX:  process(Clk,Reset)
+            begin
+                if(Reset = '1') then
+                    RegDst <= '0';
+                    ALUSrc <= '0';
+                    MemtoReg <= '0';
+                    RegWrite <= '0';
+                    MemRead <= '0';
+                    MemWrite <= '0';
+                    Branch <= '0';
+                    AluOp <= "000";
+                    Reg_destino0 <= "00000";
+                    Reg_destino1 <= "00000";
+                    EX_PC_4 <= x"00000000"; 
+                    --FALTAN LO QUE LEE DEL REGISTRO
+                --elsif() then
+                end if;
+            end process;
 --Registros faltantes del registro de Segmentación  PARA BOLUDO, ES UN PROCESO QUE DEPENDE DEL CLOCK, PORQUE ES UN REGISTROOOOOOO
 --NO Olvidarse de hacer la asignacion a los registros ded segmentacion de id/ex de todos los valores de la unidad de control
 Reg_destino0 <= Instruction(20 downto 16);
