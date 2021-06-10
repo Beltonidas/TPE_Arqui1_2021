@@ -40,30 +40,37 @@ component P1d is port( --Declaración del banco de registros
         data1_rd: out std_logic_vector (31 downto 0); 
         data2_rd: out std_logic_vector (31 downto 0) 
     );
-    
 end component;
    signal rst_rg, wr_rg: std_logic;
    signal reg1_rd_rg, reg2_rd_rg, reg_wr_rg: std_logic_vector (4 downto 0);
    signal data_wr_rg, data1_rd_rg, data2_rd_rg: std_logic_vector (31 downto 0);
    signal Special: std_logic_vector(5 downto 0);
-   signal sign_ext, EX_sign_ext: std_logic_vector (31 downto 0); --Registro de segmentacion
-   --Juraria que una de las 2 señales de arriba no es necesaria
-   signal EX_PC_4: std_logic_vector(31 downto 0); --Registro de segmentacion
+   signal sign_ext:std_logic_vector (31 downto 0);
+   
+   signal EX_RegDst, EX_ALUSrc, EX_MemtoReg, EX_RegWrite, EX_MemRead, EX_MemWrite, EX_Branch:std_logic;--Registro de segmentacion
+   signal EX_AluOp:std_logic_vector(2 downto 0); --Registro de segmentacion
+   signal EX_Reg_Destino0,  EX_Reg_Destino1:std_logic_vector (4 downto 0); --Registro de segmentacion
+   signal EX_sign_ext, EX_data2_rd_rg, EX_data1_rd_rg, EX_PC_4 : std_logic_vector (31 downto 0); --Registro de segmentacion
+      
    signal RegDst, ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch: std_logic;
    signal AluOp: std_logic_vector(2 downto 0);
    signal Reg_destino0, Reg_destino1: std_logic_vector (4 downto 0);
 ---------Fin Sección Instruction Decode---------
+
 ---------Inicio sección Execution--------------
 ------------fin sección Execution--------------
+
 ---------Inicio sección Write Back--------------
     signal WB_RegWrite: std_logic;
+    signal dato_reg_destino_wb: std_logic_vector(31 downto 0);
+    signal reg_Destino_wb: std_logic_vector(4 downto 0);
 ------------fin sección Write Back--------------
 begin 	
 Reg_bank: p1d port map( --Connexión del banco de registros
         clk => Clk,
         rst => rst_rg,
         wr  => WB_RegWrite, --ID_PC_4
-        reg1_rd => reg1_rd_rg,
+        reg1_rd => reg1_rd_rg, --reg1_rd_rg <= Instruction(25 downto 21);
         reg2_rd => reg2_rd_rg,
         reg_wr  => reg_wr_rg,
         data_wr => data_wr_rg,   
@@ -112,6 +119,20 @@ reg_IF_ID:      process(Clk,Reset)
 -------------------------------------------------------------------------------------------------------------------------
 --Fetch/ID
 -------------------------------------------------------------------------------------------------------------------------
+--Desglosamos la instrucción para elegir el numero de registros
+reg1_rd_rg <= Instruction(25 downto 21); --Seleccionaoms los registros
+reg2_rd_rg <= Instruction(20 downto 16);
+
+data1_rd_rg <= reg1_rd_rg;
+data2_rd_rg <= reg2_rd_rg; --Leemos los registros que anteriormente seleciconamos 
+
+--Definimos registro de escritura final
+reg_wr_rg <= reg_Destino_wb;
+data_wr_rg <= dato_reg_destino_wb;
+
+--Estos 2 los valores a elegir en el mux de la etapa EX
+Reg_destino0 <= Instruction(20 downto 16);
+Reg_destino1 <= Instruction(15 downto 11);
 
 --Definición de Unidad de extensión de signo.
 process (Instruction)  
@@ -125,7 +146,7 @@ begin
 end process;
 --CONFIRMAR QUE NO HAYA HECHO COSAS AL REVES
 
---Definición de Unidad de control, todo va a parar al registro de segmentación
+--Definición de Unidad de control, todo va a parar al registro de segmentación (eventualmente)
 process (Instruction)
 begin
     Special <= Instruction(31 downto 26);
@@ -213,30 +234,40 @@ begin
     end case;
 end process;
 
+--Definición de registro de segmentación ID/EX
 reg_ID_EX:  process(Clk,Reset)
             begin
                 if(Reset = '1') then
-                    RegDst <= '0';
-                    ALUSrc <= '0';
-                    MemtoReg <= '0';
-                    RegWrite <= '0';
-                    MemRead <= '0';
-                    MemWrite <= '0';
-                    Branch <= '0';
-                    AluOp <= "000";
-                    Reg_destino0 <= "00000";
-                    Reg_destino1 <= "00000";
-                    EX_PC_4 <= x"00000000"; 
-                    --FALTAN LO QUE LEE DEL REGISTRO
-                --elsif() then
+                    EX_RegDst <= '0';
+                    EX_ALUSrc <= '0';
+                    EX_MemtoReg <= '0';
+                    EX_RegWrite <= '0';
+                    EX_MemRead <= '0';
+                    EX_MemWrite <= '0';
+                    EX_Branch <= '0';
+                    EX_AluOp <= "000";
+                    EX_Reg_destino0 <= "00000";
+                    EX_Reg_destino1 <= "00000";
+                    EX_PC_4 <= x"00000000";
+                    EX_data1_rd_rg <= x"00000000";
+                    EX_data2_rd_rg <= x"00000000";                    
+                elsif(rising_edge(Clk)) then
+                    EX_RegDst <= RegDst;
+                    EX_ALUSrc <= ALUSrc;
+                    EX_MemtoReg <= MemtoReg;
+                    EX_RegWrite <= RegWrite;
+                    EX_MemRead <= MemRead;
+                    EX_MemWrite <= MemWrite;
+                    EX_Branch <= Branch;
+                    EX_AluOp <= AluOp;
+                    EX_Reg_destino0 <= Reg_destino0;
+                    EX_Reg_destino1 <= Reg_destino1;
+                    EX_PC_4 <= ID_PC_4;
+                    EX_data1_rd_rg <= data1_rd_rg;
+                    EX_data2_rd_rg <= data2_rd_rg;
                 end if;
             end process;
---Registros faltantes del registro de Segmentación  PARA BOLUDO, ES UN PROCESO QUE DEPENDE DEL CLOCK, PORQUE ES UN REGISTROOOOOOO
---NO Olvidarse de hacer la asignacion a los registros ded segmentacion de id/ex de todos los valores de la unidad de control
-Reg_destino0 <= Instruction(20 downto 16);
-Reg_destino1 <= Instruction(15 downto 11);
-EX_PC_4 <= ID_PC_4; --CREO, que esto iría al proceso del reg. de segmentacion. --sep
-
-
--------------------------------------------------------------------------------------------------------------------------              
+-------------------------------------------------------------------------------------------------------------------------
+--ID/EX
+-------------------------------------------------------------------------------------------------------------------------             
 end processor_arq;
