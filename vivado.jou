@@ -12,3 +12,6 @@
 start_gui
 open_project {D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.xpr}
 update_compile_order -fileset sources_1
+import_files -norecurse D:/Documents/Vivado/TP0/P1X/P1X.srcs/sources_1/new/P1X.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

@@ -218,3 +218,1237 @@ selectCodeEditor("processor.vhd", 521, 126); // cl (w, cl)
 selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
+// Elapsed time: 96 seconds
+closeMainWindow("MIPS Segmentado - [D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.xpr] - Vivado 2019.1"); // cl
+// A (cl): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Exit Vivado"); // A (cl)
+selectCodeEditor("processor.vhd", 506, 143); // cl (w, cl)
+selectCodeEditor("processor.vhd", 510, 150); // cl (w, cl)
+selectCodeEditor("processor.vhd", 247, 133); // cl (w, cl)
+selectCodeEditor("processor.vhd", 244, 148); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  31644966 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 51 MB. Current time: 6/12/21, 9:08:07 AM ART
+// Elapsed time: 32217 seconds
+selectCodeEditor("processor.vhd", 236, 128); // cl (w, cl)
+selectCodeEditor("processor.vhd", 488, 128); // cl (w, cl)
+selectCodeEditor("processor.vhd", 501, 132); // cl (w, cl)
+// Elapsed time: 31 seconds
+floatFrame(PAResourceOtoP.PAViews_CODE, "processor.vhd"); // az (aK, cl)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "processor.vhd"); // az (aK, aM)
+// Elapsed time: 21 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_CODE, "processor.vhd"); // az (aK, aM)
+// Elapsed time: 16 seconds
+dockFrame(PAResourceOtoP.PAViews_CODE, "processor.vhd"); // az (aK, aM)
+// PAResourceOtoP.PAViews_CODE: Code: dock view
+// Elapsed time: 14 seconds
+selectCodeEditor("processor.vhd", 202, 123); // cl (w, cl)
+selectCodeEditor("processor.vhd", 202, 131); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("processor.vhd", 163, 133); // cl (w, cl)
+selectCodeEditor("processor.vhd", 193, 134); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("processor.vhd", 196, 124); // cl (w, cl)
+selectCodeEditor("processor.vhd", 196, 125); // cl (w, cl)
+selectCodeEditor("processor.vhd", 234, 125); // cl (w, cl)
+selectCodeEditor("processor.vhd", 204, 131); // cl (w, cl)
+// Elapsed time: 48 seconds
+selectCodeEditor("processor.vhd", 507, 297); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("processor.vhd", 676, 408); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("processor.vhd", 19, 138); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, testbench_for_procesador(processor_tb - processor_tb_arq) (processor_tb.vhd), processor_tb : processor_tb(processor_tb_arq) (processor_tb.vhd)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, testbench_for_procesador(processor_tb - processor_tb_arq) (processor_tb.vhd), processor_tb : processor_tb(processor_tb_arq) (processor_tb.vhd)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, testbench_for_procesador(processor_tb - processor_tb_arq) (processor_tb.vhd), processor_tb : processor_tb(processor_tb_arq) (processor_tb.vhd), processor(processor_arq) (processor.vhd)]", 6, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, testbench_for_procesador(processor_tb - processor_tb_arq) (processor_tb.vhd), processor_tb : processor_tb(processor_tb_arq) (processor_tb.vhd), processor(processor_arq) (processor.vhd)]", 6, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, Popup.HeavyWeightWindow)
+// Elapsed time: 17 seconds
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ah (an, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton("BACK", "< Back"); // JButton (j, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ah (an, c)
+// Elapsed time: 72 seconds
+setFileChooser("D:/Documents/Vivado/TP0/P1X/P1X.srcs/sources_1/new/P1X.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 86 seconds
+dismissDialog("Add Sources"); // c (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// c (cl): Add Sources: addNotify
+// TclEventType: FILE_SET_CHANGE
+// by (c):  Add Sources  : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse D:/Documents/Vivado/TP0/P1X/P1X.srcs/sources_1/new/P1X.vhd 
+dismissDialog("Add Sources"); // by (c)
+// [GUI Memory]: 116 MB (+579kb) [10:25:29]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, P1c(Behavioral) (P1X.vhd)]", 8, false); // B (F, cl)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, P1c(Behavioral) (P1X.vhd)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, P1c(Behavioral) (P1X.vhd)]", 8, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("P1X.vhd", 71, 333); // cl (w, cl)
+typeControlKey((HResource) null, "P1X.vhd", 'c'); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor.vhd", 1); // k (j, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("processor.vhd", 349, 233); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 64, 166); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 27, 197); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("processor.vhd", 76, 187); // cl (w, cl)
+selectCodeEditor("processor.vhd", 104, 297); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("processor.vhd", 106, 203); // cl (w, cl)
+selectCodeEditor("processor.vhd", 84, 213); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 148, 178); // cl (w, cl)
+selectCodeEditor("processor.vhd", 135, 200); // cl (w, cl)
+selectCodeEditor("processor.vhd", 223, 178); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 136, 213); // cl (w, cl)
+selectCodeEditor("processor.vhd", 255, 85); // cl (w, cl)
+selectCodeEditor("processor.vhd", 249, 141); // cl (w, cl)
+// Elapsed time: 43 seconds
+selectCodeEditor("processor.vhd", 182, 217); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("processor.vhd", 75, 281); // cl (w, cl)
+selectCodeEditor("processor.vhd", 2, 109); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 44, 306); // cl (w, cl)
+selectCodeEditor("processor.vhd", 6, 300); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 54, 241); // cl (w, cl)
+selectCodeEditor("processor.vhd", 52, 246); // cl (w, cl)
+selectCodeEditor("processor.vhd", 79, 297); // cl (w, cl)
+selectCodeEditor("processor.vhd", 60, 260); // cl (w, cl)
+selectCodeEditor("processor.vhd", 115, 162); // cl (w, cl)
+selectCodeEditor("processor.vhd", 80, 144); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 63, 312); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 77, 333); // cl (w, cl)
+selectCodeEditor("processor.vhd", 81, 349); // cl (w, cl)
+selectCodeEditor("processor.vhd", 80, 361); // cl (w, cl)
+selectCodeEditor("processor.vhd", 84, 387); // cl (w, cl)
+selectCodeEditor("processor.vhd", 60, 319); // cl (w, cl)
+selectCodeEditor("processor.vhd", 74, 314); // cl (w, cl)
+selectCodeEditor("processor.vhd", 340, 315); // cl (w, cl)
+// Elapsed time: 146 seconds
+selectCodeEditor("processor.vhd", 76, 317); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 392, 288); // cl (w, cl)
+selectCodeEditor("processor.vhd", 189, 314); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("processor.vhd", 20, 300); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("processor.vhd", 234, 307); // cl (w, cl)
+selectCodeEditor("processor.vhd", 48, 298); // cl (w, cl)
+selectCodeEditor("processor.vhd", 228, 257); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "P1X.vhd", 2); // k (j, cl)
+selectCodeEditor("P1X.vhd", 70, 148); // cl (w, cl)
+typeControlKey((HResource) null, "P1X.vhd", 'c'); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor.vhd", 1); // k (j, cl)
+selectCodeEditor("processor.vhd", 55, 297); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 109, 334); // cl (w, cl)
+selectCodeEditor("processor.vhd", 43, 324); // cl (w, cl)
+selectCodeEditor("processor.vhd", 90, 181); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 120, 255); // cl (w, cl)
+selectCodeEditor("processor.vhd", 214, 159); // cl (w, cl)
+selectCodeEditor("processor.vhd", 179, 163); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "P1X.vhd", 2); // k (j, cl)
+selectCodeEditor("P1X.vhd", 161, 158); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor.vhd", 1); // k (j, cl)
+selectCodeEditor("processor.vhd", 51, 144); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "P1X.vhd", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor.vhd", 1); // k (j, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("processor.vhd", 92, 216); // cl (w, cl)
+selectCodeEditor("processor.vhd", 129, 270); // cl (w, cl)
+selectCodeEditor("processor.vhd", 152, 253); // cl (w, cl)
+selectCodeEditor("processor.vhd", 159, 260); // cl (w, cl)
+selectCodeEditor("processor.vhd", 220, 319); // cl (w, cl)
+selectCodeEditor("processor.vhd", 248, 299); // cl (w, cl)
+selectCodeEditor("processor.vhd", 343, 247); // cl (w, cl)
+selectCodeEditor("processor.vhd", 363, 239); // cl (w, cl)
+selectCodeEditor("processor.vhd", 366, 225); // cl (w, cl)
+selectCodeEditor("processor.vhd", 100, 230); // cl (w, cl)
+selectCodeEditor("processor.vhd", 245, 187); // cl (w, cl)
+selectCodeEditor("processor.vhd", 90, 215); // cl (w, cl)
+selectCodeEditor("processor.vhd", 156, 137); // cl (w, cl)
+selectCodeEditor("processor.vhd", 166, 267); // cl (w, cl)
+selectCodeEditor("processor.vhd", 55, 181); // cl (w, cl)
+selectCodeEditor("processor.vhd", 207, 144); // cl (w, cl)
+selectCodeEditor("processor.vhd", 144, 208); // cl (w, cl)
+selectCodeEditor("processor.vhd", 52, 183); // cl (w, cl)
+selectCodeEditor("processor.vhd", 70, 180); // cl (w, cl)
+selectCodeEditor("processor.vhd", 205, 248); // cl (w, cl)
+selectCodeEditor("processor.vhd", 260, 231); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("processor.vhd", 103, 268); // cl (w, cl)
+selectCodeEditor("processor.vhd", 342, 266); // cl (w, cl)
+selectCodeEditor("processor.vhd", 95, 250); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 82, 265); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 114, 282); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 107, 294); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 99, 314); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 100, 310); // cl (w, cl)
+selectCodeEditor("processor.vhd", 110, 263); // cl (w, cl)
+selectCodeEditor("processor.vhd", 107, 277); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("processor.vhd", 123, 289); // cl (w, cl)
+selectCodeEditor("processor.vhd", 133, 300); // cl (w, cl)
+selectCodeEditor("processor.vhd", 103, 259); // cl (w, cl)
+// Elapsed time: 86 seconds
+selectCodeEditor("processor.vhd", 85, 353); // cl (w, cl)
+// Elapsed time: 68 seconds
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 157, 113); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("processor.vhd", 171, 248); // cl (w, cl)
+selectCodeEditor("processor.vhd", 184, 278); // cl (w, cl)
+selectCodeEditor("processor.vhd", 140, 178); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 103, 158); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("processor.vhd", 178, 193); // cl (w, cl)
+selectCodeEditor("processor.vhd", 172, 184); // cl (w, cl)
+selectCodeEditor("processor.vhd", 33, 164); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 144, 233); // cl (w, cl)
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 668, 80); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 134, 311); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 345, 315); // cl (w, cl)
+selectCodeEditor("processor.vhd", 317, 282); // cl (w, cl)
+selectCodeEditor("processor.vhd", 302, 292); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 56 MB. Current time: 6/12/21, 9:38:07 AM ART
+selectCodeEditor("processor.vhd", 33, 349); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 106, 248); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "P1X.vhd", 2); // k (j, cl)
+selectCodeEditor("P1X.vhd", 92, 285); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor.vhd", 1); // k (j, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 173, 351); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 142, 259); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 140, 279); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("processor.vhd", 352, 366); // cl (w, cl)
+selectCodeEditor("processor.vhd", 115, 368); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("processor.vhd", 109, 368); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 111, 370); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 132, 296); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 32, 403); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 116, 318); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 187, 316); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 123, 383); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 151, 378); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+typeControlKey(null, null, 'z');
+selectCodeEditor("processor.vhd", 64, 253); // cl (w, cl)
+selectCodeEditor("processor.vhd", 32, 250); // cl (w, cl)
+selectCodeEditor("processor.vhd", 65, 246); // cl (w, cl)
+selectCodeEditor("processor.vhd", 99, 131); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectCodeEditor("processor.vhd", 68, 249); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 189, 269); // cl (w, cl)
+selectCodeEditor("processor.vhd", 126, 249); // cl (w, cl)
+// Elapsed time: 35 seconds
+selectCodeEditor("processor.vhd", 159, 184); // cl (w, cl)
+selectCodeEditor("processor.vhd", 176, 158); // cl (w, cl)
+selectCodeEditor("processor.vhd", 186, 367); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 128, 328); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 136, 357); // cl (w, cl)
+selectCodeEditor("processor.vhd", 135, 354); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 427, 264); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "P1X.vhd", 2); // k (j, cl)
+selectCodeEditor("P1X.vhd", 112, 114); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor.vhd", 1); // k (j, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("processor.vhd", 130, 382); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 135, 365); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 231, 326); // cl (w, cl)
+// Elapsed time: 44 seconds
+selectCodeEditor("processor.vhd", 203, 331); // cl (w, cl)
+// Elapsed time: 30 seconds
+selectCodeEditor("processor.vhd", 183, 277); // cl (w, cl)
+selectCodeEditor("processor.vhd", 126, 280); // cl (w, cl)
+selectCodeEditor("processor.vhd", 121, 277); // cl (w, cl)
+selectCodeEditor("processor.vhd", 124, 281); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("processor.vhd", 174, 280); // cl (w, cl)
+selectCodeEditor("processor.vhd", 177, 280); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 258, 336); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 30 seconds
+selectCodeEditor("processor.vhd", 369, 94); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("processor.vhd", 203, 145); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 26 seconds
+selectCodeEditor("processor.vhd", 196, 144); // cl (w, cl)
+// Elapsed time: 56 seconds
+selectCodeEditor("processor.vhd", 123, 195); // cl (w, cl)
+// Elapsed time: 250 seconds
+selectCodeEditor("processor.vhd", 34, 329); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+// Elapsed time: 35 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "P1X.vhd", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor.vhd", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "P1X.vhd", 2); // k (j, cl)
+selectCodeEditor("P1X.vhd", 127, 229); // cl (w, cl)
+selectCodeEditor("P1X.vhd", 163, 312); // cl (w, cl)
+selectCodeEditor("P1X.vhd", 120, 225); // cl (w, cl)
+typeControlKey((HResource) null, "P1X.vhd", 'c'); // cl (w, cl)
+// Elapsed time: 226 seconds
+typeControlKey((HResource) null, "P1X.vhd", 'c'); // cl (w, cl)
+// Elapsed time: 144 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 112 seconds
+selectCodeEditor("processor.vhd", 522, 286); // cl (w, cl)
+// Elapsed time: 36 seconds
+selectCodeEditor("processor.vhd", 183, 293); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 56 MB. Current time: 6/12/21, 10:08:07 AM ART
+// Elapsed time: 943 seconds
+selectCodeEditor("processor.vhd", 37, 191); // cl (w, cl)
+selectCodeEditor("processor.vhd", 0, 144); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 39, 188); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 102 seconds
+selectCodeEditor("processor.vhd", 63, 230); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("processor.vhd", 65, 324); // cl (w, cl)
+// Elapsed time: 53 seconds
+selectCodeEditor("processor.vhd", 364, 317); // cl (w, cl)
+// Elapsed time: 29 seconds
+selectCodeEditor("processor.vhd", 385, 311); // cl (w, cl)
+selectCodeEditor("processor.vhd", 226, 333); // cl (w, cl)
+selectCodeEditor("processor.vhd", 339, 304); // cl (w, cl)
+selectCodeEditor("processor.vhd", 183, 337); // cl (w, cl)
+selectCodeEditor("processor.vhd", 176, 301); // cl (w, cl)
+selectCodeEditor("processor.vhd", 57, 313); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("processor.vhd", 98, 361); // cl (w, cl)
+selectCodeEditor("processor.vhd", 87, 361); // cl (w, cl)
+selectCodeEditor("processor.vhd", 87, 360, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("processor.vhd", 90, 363); // cl (w, cl)
+selectCodeEditor("processor.vhd", 90, 363); // cl (w, cl)
+selectCodeEditor("processor.vhd", 61, 361); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 306, 327); // cl (w, cl)
+selectCodeEditor("processor.vhd", 236, 359); // cl (w, cl)
+// Elapsed time: 28 seconds
+selectCodeEditor("processor.vhd", 30, 174); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 189, 326); // cl (w, cl)
+selectCodeEditor("processor.vhd", 66, 302); // cl (w, cl)
+selectCodeEditor("processor.vhd", 66, 309); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 81, 265); // cl (w, cl)
+selectCodeEditor("processor.vhd", 59, 266); // cl (w, cl)
+selectCodeEditor("processor.vhd", 69, 264); // cl (w, cl)
+selectCodeEditor("processor.vhd", 49, 199); // cl (w, cl)
+selectCodeEditor("processor.vhd", 69, 214); // cl (w, cl)
+selectCodeEditor("processor.vhd", 105, 232); // cl (w, cl)
+selectCodeEditor("processor.vhd", 49, 244); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 54, 177); // cl (w, cl)
+selectCodeEditor("processor.vhd", 4, 179); // cl (w, cl)
+selectCodeEditor("processor.vhd", 52, 179); // cl (w, cl)
+selectCodeEditor("processor.vhd", 0, 176); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 237, 265); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 29 seconds
+selectCodeEditor("processor.vhd", 123, 241); // cl (w, cl)
+selectCodeEditor("processor.vhd", 123, 241, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 172, 271); // cl (w, cl)
+selectCodeEditor("processor.vhd", 112, 268); // cl (w, cl)
+selectCodeEditor("processor.vhd", 235, 231); // cl (w, cl)
+selectCodeEditor("processor.vhd", 106, 266); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 1, 274); // cl (w, cl)
+selectCodeEditor("processor.vhd", 195, 299); // cl (w, cl)
+selectCodeEditor("processor.vhd", 124, 308); // cl (w, cl)
+selectCodeEditor("processor.vhd", 91, 320); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 153, 321); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 223, 300); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("processor.vhd", 89, 319); // cl (w, cl)
+selectCodeEditor("processor.vhd", 90, 307); // cl (w, cl)
+selectCodeEditor("processor.vhd", 151, 299); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectCodeEditor("processor.vhd", 80, 145); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 168, 264); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 28 seconds
+selectCodeEditor("processor.vhd", 26, 180); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 275, 318); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("processor.vhd", 146, 310); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 185, 333); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 49, 330); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 279, 334); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 275, 308); // cl (w, cl)
+selectCodeEditor("processor.vhd", 288, 342); // cl (w, cl)
+selectCodeEditor("processor.vhd", 112, 350); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("processor.vhd", 178, 348); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("processor.vhd", 246, 346); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("processor.vhd", 273, 349); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 106, 368); // cl (w, cl)
+selectCodeEditor("processor.vhd", 253, 364); // cl (w, cl)
+selectCodeEditor("processor.vhd", 276, 372); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 101, 379); // cl (w, cl)
+selectCodeEditor("processor.vhd", 252, 382); // cl (w, cl)
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 109, 399); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("processor.vhd", 145, 404); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("processor.vhd", 63, 198); // cl (w, cl)
+selectCodeEditor("processor.vhd", 83, 188); // cl (w, cl)
+selectCodeEditor("processor.vhd", 26, 194); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 148, 295); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 182, 323); // cl (w, cl)
+selectCodeEditor("processor.vhd", 87, 317); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 211, 311); // cl (w, cl)
+// Elapsed time: 27 seconds
+selectCodeEditor("processor.vhd", 218, 327); // cl (w, cl)
+// Elapsed time: 21 seconds
+selectCodeEditor("processor.vhd", 85, 327); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 336, 337); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 161, 351); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 33 seconds
+selectCodeEditor("processor.vhd", 67, 214); // cl (w, cl)
+selectCodeEditor("processor.vhd", 152, 208); // cl (w, cl)
+// Elapsed time: 34 seconds
+selectCodeEditor("processor.vhd", 328, 286); // cl (w, cl)
+selectCodeEditor("processor.vhd", 323, 280); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 167, 297); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("processor.vhd", 306, 299); // cl (w, cl)
+selectCodeEditor("processor.vhd", 318, 296); // cl (w, cl)
+selectCodeEditor("processor.vhd", 325, 297); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 141, 316); // cl (w, cl)
+selectCodeEditor("processor.vhd", 86, 251); // cl (w, cl)
+selectCodeEditor("processor.vhd", 217, 311); // cl (w, cl)
+selectCodeEditor("processor.vhd", 197, 313); // cl (w, cl)
+selectCodeEditor("processor.vhd", 327, 314); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("processor.vhd", 12, 89); // cl (w, cl)
+// Elapsed time: 28 seconds
+selectCodeEditor("processor.vhd", 139, 113); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 173, 179); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("processor.vhd", 146, 114); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 329, 179); // cl (w, cl)
+// Elapsed time: 58 seconds
+selectCodeEditor("processor.vhd", 148, 64); // cl (w, cl)
+selectCodeEditor("processor.vhd", 136, 63); // cl (w, cl)
+selectCodeEditor("processor.vhd", 138, 61); // cl (w, cl)
+// Elapsed time: 25 seconds
+selectCodeEditor("processor.vhd", 129, 85); // cl (w, cl)
+// Elapsed time: 57 seconds
+selectCodeEditor("processor.vhd", 102, 273); // cl (w, cl)
+selectCodeEditor("processor.vhd", 59, 94); // cl (w, cl)
+selectCodeEditor("processor.vhd", 174, 95); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 96 seconds
+selectCodeEditor("processor.vhd", 479, 154); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 55 MB. Current time: 6/12/21, 10:38:08 AM ART
+// Elapsed time: 111 seconds
+selectCodeEditor("processor.vhd", 239, 42); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectCodeEditor("processor.vhd", 138, 248); // cl (w, cl)
+// Elapsed time: 33 seconds
+selectCodeEditor("processor.vhd", 137, 349); // cl (w, cl)
+// Elapsed time: 392 seconds
+selectCodeEditor("processor.vhd", 185, 248); // cl (w, cl)
+selectCodeEditor("processor.vhd", 188, 244); // cl (w, cl)
+// Elapsed time: 53 seconds
+selectCodeEditor("processor.vhd", 277, 97); // cl (w, cl)
+selectCodeEditor("processor.vhd", 206, 95); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 265, 120); // cl (w, cl)
+selectCodeEditor("processor.vhd", 111, 314); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectCodeEditor("processor.vhd", 105, 413); // cl (w, cl)
+// Elapsed time: 32 seconds
+selectCodeEditor("processor.vhd", 117, 314); // cl (w, cl)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 51 seconds
+selectCodeEditor("processor.vhd", 84, 311); // cl (w, cl)
+selectCodeEditor("processor.vhd", 101, 311); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 387, 317); // cl (w, cl)
+selectCodeEditor("processor.vhd", 112, 335); // cl (w, cl)
+selectCodeEditor("processor.vhd", 112, 335, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("processor.vhd", 112, 335); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 1, 334, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("processor.vhd", 126, 292); // cl (w, cl)
+// Elapsed time: 201 seconds
+selectCodeEditor("processor.vhd", 236, 337); // cl (w, cl)
+// Elapsed time: 224 seconds
+selectCodeEditor("processor.vhd", 36, 128); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 41 seconds
+selectCodeEditor("processor.vhd", 188, 372); // cl (w, cl)
+// Elapsed time: 36 seconds
+selectCodeEditor("processor.vhd", 420, 319); // cl (w, cl)
+// Elapsed time: 88 seconds
+selectCodeEditor("processor.vhd", 400, 67); // cl (w, cl)
+selectCodeEditor("processor.vhd", 408, 60); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 112, 307); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 70 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, testbench_for_procesador(processor_tb - processor_tb_arq) (processor_tb.vhd), processor_tb : processor_tb(processor_tb_arq) (processor_tb.vhd), processor(processor_arq) (processor.vhd), ALU : P1c(Behavioral) (P1X.vhd)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, testbench_for_procesador(processor_tb - processor_tb_arq) (processor_tb.vhd), processor_tb : processor_tb(processor_tb_arq) (processor_tb.vhd), processor(processor_arq) (processor.vhd), ALU : P1c(Behavioral) (P1X.vhd)]", 8, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor.vhd", 1); // k (j, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("processor.vhd", 423, 316); // cl (w, cl)
+selectCodeEditor("processor.vhd", 340, 319); // cl (w, cl)
+selectCodeEditor("processor.vhd", 341, 319); // cl (w, cl)
+selectCodeEditor("processor.vhd", 336, 320); // cl (w, cl)
+// Elapsed time: 150 seconds
+selectCodeEditor("processor.vhd", 414, 309); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 55 MB. Current time: 6/12/21, 11:08:08 AM ART
+// Elapsed time: 405 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("processor.vhd", 350, 249); // cl (w, cl)
+// Elapsed time: 51 seconds
+selectCodeEditor("processor.vhd", 88, 258); // cl (w, cl)
+selectCodeEditor("processor.vhd", 90, 264); // cl (w, cl)
+selectCodeEditor("processor.vhd", 292, 261); // cl (w, cl)
+selectCodeEditor("processor.vhd", 285, 263); // cl (w, cl)
+selectCodeEditor("processor.vhd", 371, 260); // cl (w, cl)
+selectCodeEditor("processor.vhd", 416, 266); // cl (w, cl)
+// Elapsed time: 66 seconds
+selectCodeEditor("processor.vhd", 58, 161); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("processor.vhd", 144, 209); // cl (w, cl)
+selectCodeEditor("processor.vhd", 169, 102); // cl (w, cl)
+// Elapsed time: 292 seconds
+selectCodeEditor("processor.vhd", 517, 162); // cl (w, cl)
+selectCodeEditor("processor.vhd", 515, 169); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 278, 151); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 279, 111); // cl (w, cl)
+selectCodeEditor("processor.vhd", 256, 261); // cl (w, cl)
+selectCodeEditor("processor.vhd", 269, 304); // cl (w, cl)
+selectCodeEditor("processor.vhd", 535, 218); // cl (w, cl)
+selectCodeEditor("processor.vhd", 146, 216); // cl (w, cl)
+selectCodeEditor("processor.vhd", 167, 212); // cl (w, cl)
+selectCodeEditor("processor.vhd", 185, 213); // cl (w, cl)
+selectCodeEditor("processor.vhd", 270, 180); // cl (w, cl)
+selectCodeEditor("processor.vhd", 247, 229); // cl (w, cl)
+selectCodeEditor("processor.vhd", 168, 213); // cl (w, cl)
+selectCodeEditor("processor.vhd", 153, 219); // cl (w, cl)
+selectCodeEditor("processor.vhd", 160, 215); // cl (w, cl)
+selectCodeEditor("processor.vhd", 217, 212); // cl (w, cl)
+selectCodeEditor("processor.vhd", 303, 212); // cl (w, cl)
+selectCodeEditor("processor.vhd", 366, 215); // cl (w, cl)
+selectCodeEditor("processor.vhd", 369, 215); // cl (w, cl)
+selectCodeEditor("processor.vhd", 477, 212); // cl (w, cl)
+selectCodeEditor("processor.vhd", 548, 218); // cl (w, cl)
+selectCodeEditor("processor.vhd", 334, 303); // cl (w, cl)
+// Elapsed time: 118 seconds
+selectCodeEditor("processor.vhd", 625, 209); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("processor.vhd", 532, 214); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("processor.vhd", 268, 232); // cl (w, cl)
+// Elapsed time: 59 seconds
+selectCodeEditor("processor.vhd", 484, 208); // cl (w, cl)
+// Elapsed time: 31 seconds
+selectCodeEditor("processor.vhd", 196, 296); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 457, 326); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 302, 226); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectCodeEditor("processor.vhd", 78, 125); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+// Elapsed time: 52 seconds
+selectCodeEditor("processor.vhd", 169, 111); // cl (w, cl)
+selectCodeEditor("processor.vhd", 277, 111); // cl (w, cl)
+selectCodeEditor("processor.vhd", 243, 112); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("processor.vhd", 219, 131); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("processor.vhd", 167, 131); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 418, 132); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 263, 146); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("processor.vhd", 420, 145); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("processor.vhd", 274, 147); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 376, 161); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 427, 163); // cl (w, cl)
+// Elapsed time: 31 seconds
+selectCodeEditor("processor.vhd", 312, 181); // cl (w, cl)
+selectCodeEditor("processor.vhd", 359, 158); // cl (w, cl)
+selectCodeEditor("processor.vhd", 303, 175); // cl (w, cl)
+selectCodeEditor("processor.vhd", 193, 176); // cl (w, cl)
+selectCodeEditor("processor.vhd", 191, 176); // cl (w, cl)
+selectCodeEditor("processor.vhd", 259, 163); // cl (w, cl)
+selectCodeEditor("processor.vhd", 226, 180); // cl (w, cl)
+selectCodeEditor("processor.vhd", 302, 154); // cl (w, cl)
+selectCodeEditor("processor.vhd", 308, 175); // cl (w, cl)
+selectCodeEditor("processor.vhd", 263, 167); // cl (w, cl)
+selectCodeEditor("processor.vhd", 305, 178); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 313, 177); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("processor.vhd", 328, 197); // cl (w, cl)
+selectCodeEditor("processor.vhd", 253, 195); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 288, 209); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 354, 243); // cl (w, cl)
+selectCodeEditor("processor.vhd", 327, 270); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 332, 284); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 399, 191); // cl (w, cl)
+selectCodeEditor("processor.vhd", 315, 342); // cl (w, cl)
+selectCodeEditor("processor.vhd", 337, 326); // cl (w, cl)
+selectCodeEditor("processor.vhd", 326, 347); // cl (w, cl)
+selectCodeEditor("processor.vhd", 336, 311); // cl (w, cl)
+selectCodeEditor("processor.vhd", 328, 255); // cl (w, cl)
+selectCodeEditor("processor.vhd", 327, 342); // cl (w, cl)
+selectCodeEditor("processor.vhd", 338, 255); // cl (w, cl)
+selectCodeEditor("processor.vhd", 296, 198); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectCodeEditor("processor.vhd", 396, 213); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 292, 200); // cl (w, cl)
+selectCodeEditor("processor.vhd", 398, 213); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 179, 266); // cl (w, cl)
+// Elapsed time: 71 seconds
+selectCodeEditor("processor.vhd", 304, 262); // cl (w, cl)
+selectCodeEditor("processor.vhd", 319, 262); // cl (w, cl)
+selectCodeEditor("processor.vhd", 285, 191); // cl (w, cl)
+selectCodeEditor("processor.vhd", 403, 231); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("processor.vhd", 339, 219); // cl (w, cl)
+selectCodeEditor("processor.vhd", 402, 227); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectCodeEditor("processor.vhd", 402, 245); // cl (w, cl)
+selectCodeEditor("processor.vhd", 400, 246); // cl (w, cl)
+selectCodeEditor("processor.vhd", 401, 248); // cl (w, cl)
+selectCodeEditor("processor.vhd", 403, 247); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("processor.vhd", 298, 263); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 298, 281); // cl (w, cl)
+// Elapsed time: 72 seconds
+selectCodeEditor("processor.vhd", 417, 263); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 55 MB. Current time: 6/12/21, 11:38:08 AM ART
+// Elapsed time: 300 seconds
+selectCodeEditor("processor.vhd", 0, 348); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 76, 396); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 25, 404); // cl (w, cl)
+selectCodeEditor("processor.vhd", 31, 402); // cl (w, cl)
+selectCodeEditor("processor.vhd", 38, 357); // cl (w, cl)
+selectCodeEditor("processor.vhd", 115, 279); // cl (w, cl)
+selectCodeEditor("processor.vhd", 39, 112); // cl (w, cl)
+selectCodeEditor("processor.vhd", 56, 169); // cl (w, cl)
+selectCodeEditor("processor.vhd", 234, 136); // cl (w, cl)
+selectCodeEditor("processor.vhd", 226, 127); // cl (w, cl)
+// Elapsed time: 17 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 14 seconds
+selectCodeEditor("processor.vhd", 40, 196); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("processor.vhd", 113, 179); // cl (w, cl)
+selectCodeEditor("processor.vhd", 186, 268); // cl (w, cl)
+selectCodeEditor("processor.vhd", 198, 269); // cl (w, cl)
+selectCodeEditor("processor.vhd", 198, 269); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 229, 282); // cl (w, cl)
+selectCodeEditor("processor.vhd", 106, 231); // cl (w, cl)
+selectCodeEditor("processor.vhd", 149, 175); // cl (w, cl)
+selectCodeEditor("processor.vhd", 362, 125); // cl (w, cl)
+selectCodeEditor("processor.vhd", 201, 362); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 203, 315); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 211, 324); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 197, 242); // cl (w, cl)
+selectCodeEditor("processor.vhd", 422, 220); // cl (w, cl)
+selectCodeEditor("processor.vhd", 423, 246); // cl (w, cl)
+selectCodeEditor("processor.vhd", 609, 348); // cl (w, cl)
+selectCodeEditor("processor.vhd", 377, 283); // cl (w, cl)
+selectCodeEditor("processor.vhd", 367, 324); // cl (w, cl)
+selectCodeEditor("processor.vhd", 333, 297); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("processor.vhd", 249, 333); // cl (w, cl)
+selectCodeEditor("processor.vhd", 205, 372); // cl (w, cl)
+selectCodeEditor("processor.vhd", 198, 387); // cl (w, cl)
+selectCodeEditor("processor.vhd", 200, 397); // cl (w, cl)
+selectCodeEditor("processor.vhd", 2, 351); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 62, 397); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 37, 405); // cl (w, cl)
+selectCodeEditor("processor.vhd", 71, 397); // cl (w, cl)
+selectCodeEditor("processor.vhd", 96, 365); // cl (w, cl)
+selectCodeEditor("processor.vhd", 87, 329); // cl (w, cl)
+selectCodeEditor("processor.vhd", 99, 348); // cl (w, cl)
+// Elapsed time: 51 seconds
+selectCodeEditor("processor.vhd", 153, 347); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("processor.vhd", 238, 345); // cl (w, cl)
+// Elapsed time: 60 seconds
+selectCodeEditor("processor.vhd", 134, 419); // cl (w, cl)
+selectCodeEditor("processor.vhd", 125, 421); // cl (w, cl)
+selectCodeEditor("processor.vhd", 134, 417); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("processor.vhd", 241, 410); // cl (w, cl)
+// Elapsed time: 27 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 38 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "P1X.vhd", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor.vhd", 1); // k (j, cl)
+floatFrame(PAResourceOtoP.PAViews_CODE, "processor.vhd"); // az (aK, cl)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "processor.vhd"); // az (aK, aM)
+// Elapsed time: 30 seconds
+selectCodeEditor("processor.vhd", 1, 197); // cl (w, aM)
+selectCodeEditor("processor.vhd", 31, 237); // cl (w, aM)
+// Elapsed time: 35 seconds
+selectCodeEditor("processor.vhd", 384, 344); // cl (w, aM)
+selectCodeEditor("processor.vhd", 64, 266); // cl (w, aM)
+selectCodeEditor("processor.vhd", 24, 262); // cl (w, aM)
+selectCodeEditor("processor.vhd", 26, 265); // cl (w, aM)
+// Elapsed time: 81 seconds
+dockFrame(PAResourceOtoP.PAViews_CODE, "processor.vhd*"); // az (aK, aM)
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "processor.vhd*"); // az (aK, aM)
+// PAResourceOtoP.PAViews_CODE: Code: dock view
+selectCodeEditor("processor.vhd", 283, 269); // cl (w, cl)
+selectCodeEditor("processor.vhd", 361, 334); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("processor.vhd", 357, 326); // cl (w, cl)
+selectCodeEditor("processor.vhd", 363, 330); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 81, 180); // cl (w, cl)
+selectCodeEditor("processor.vhd", 78, 181); // cl (w, cl)
+selectCodeEditor("processor.vhd", 108, 226); // cl (w, cl)
+selectCodeEditor("processor.vhd", 88, 234); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 133, 246); // cl (w, cl)
+// Elapsed time: 82 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, testbench_for_procesador(processor_tb - processor_tb_arq) (processor_tb.vhd), processor_tb : processor_tb(processor_tb_arq) (processor_tb.vhd), Instruction_Mem_inst : memory(mem_arq) (memory.vhd)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, testbench_for_procesador(processor_tb - processor_tb_arq) (processor_tb.vhd), processor_tb : processor_tb(processor_tb_arq) (processor_tb.vhd), Instruction_Mem_inst : memory(mem_arq) (memory.vhd)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("memory.vhd", 79, 161); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor.vhd", 2); // k (j, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("processor.vhd", 534, 231); // cl (w, cl)
+// Elapsed time: 28 seconds
+selectCodeEditor("processor.vhd", 142, 362); // cl (w, cl)
+selectCodeEditor("processor.vhd", 128, 365); // cl (w, cl)
+// Elapsed time: 25 seconds
+selectCodeEditor("processor.vhd", 2, 369); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 543, 353); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 18, 366); // cl (w, cl)
+// Elapsed time: 76 seconds
+selectCodeEditor("processor.vhd", 260, 347); // cl (w, cl)
+// Elapsed time: 60 seconds
+selectCodeEditor("processor.vhd", 616, 167); // cl (w, cl)
+selectCodeEditor("processor.vhd", 24, 226); // cl (w, cl)
+selectCodeEditor("processor.vhd", 23, 163); // cl (w, cl)
+selectCodeEditor("processor.vhd", 28, 233); // cl (w, cl)
+// Elapsed time: 558 seconds
+selectCodeEditor("processor.vhd", 245, 156); // cl (w, cl)
+// Elapsed time: 53 seconds
+selectCodeEditor("processor.vhd", 220, 179); // cl (w, cl)
+// Elapsed time: 40 seconds
+selectCodeEditor("processor.vhd", 150, 298); // cl (w, cl)
+selectCodeEditor("processor.vhd", 205, 180); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("processor.vhd", 33, 191); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 55 MB. Current time: 6/12/21, 12:08:09 PM ART
+// Elapsed time: 78 seconds
+selectCodeEditor("processor.vhd", 229, 419); // cl (w, cl)
+// Elapsed time: 162 seconds
+selectCodeEditor("processor.vhd", 117, 401); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("processor.vhd", 52, 400); // cl (w, cl)
+selectCodeEditor("processor.vhd", 52, 397); // cl (w, cl)
+selectCodeEditor("processor.vhd", 53, 396); // cl (w, cl)
+selectCodeEditor("processor.vhd", 143, 400); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 108, 400); // cl (w, cl)
+selectCodeEditor("processor.vhd", 109, 401); // cl (w, cl)
+selectCodeEditor("processor.vhd", 88, 401); // cl (w, cl)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("processor.vhd", 115, 404); // cl (w, cl)
+selectCodeEditor("processor.vhd", 6, 398); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 8, 402); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 185, 368); // cl (w, cl)
+selectCodeEditor("processor.vhd", 192, 373); // cl (w, cl)
+selectCodeEditor("processor.vhd", 84, 397); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectCodeEditor("processor.vhd", 232, 253); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 330, 227); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 344, 236); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("processor.vhd", 334, 247); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 259, 290); // cl (w, cl)
+selectCodeEditor("processor.vhd", 223, 272); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 125, 284); // cl (w, cl)
+selectCodeEditor("processor.vhd", 3, 267); // cl (w, cl)
+selectCodeEditor("processor.vhd", 195, 267); // cl (w, cl)
+selectCodeEditor("processor.vhd", 587, 133); // cl (w, cl)
+selectCodeEditor("processor.vhd", 588, 131); // cl (w, cl)
+selectCodeEditor("processor.vhd", 598, 128); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 209, 262); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 394, 283); // cl (w, cl)
+selectCodeEditor("processor.vhd", 48, 262); // cl (w, cl)
+selectCodeEditor("processor.vhd", 173, 208); // cl (w, cl)
+selectCodeEditor("processor.vhd", 587, 141); // cl (w, cl)
+selectCodeEditor("processor.vhd", 194, 353); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("processor.vhd", 255, 227); // cl (w, cl)
+selectCodeEditor("processor.vhd", 135, 264); // cl (w, cl)
+selectCodeEditor("processor.vhd", 209, 269); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("processor.vhd", 0, 280); // cl (w, cl)
+selectCodeEditor("processor.vhd", 183, 351); // cl (w, cl)
+// Elapsed time: 33 seconds
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 16); // u (O, cl)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 16); // u (O, cl)
+// Elapsed time: 85 seconds
+selectCodeEditor("processor.vhd", 258, 347); // cl (w, cl)
+// Elapsed time: 58 seconds
+selectCodeEditor("processor.vhd", 230, 345); // cl (w, cl)
+selectCodeEditor("processor.vhd", 212, 213); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 209, 346); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 337, 95); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 98, 153); // cl (w, cl)
+selectCodeEditor("processor.vhd", 94, 160); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 306, 164); // cl (w, cl)
+selectCodeEditor("processor.vhd", 40, 179); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("processor.vhd", 242, 232); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("processor.vhd", 403, 366); // cl (w, cl)
+// Elapsed time: 68 seconds
+selectCodeEditor("processor.vhd", 165, 233); // cl (w, cl)
+selectCodeEditor("processor.vhd", 174, 369); // cl (w, cl)
+selectCodeEditor("processor.vhd", 242, 325); // cl (w, cl)
+selectCodeEditor("processor.vhd", 350, 365); // cl (w, cl)
+// Elapsed time: 31 seconds
+selectCodeEditor("processor.vhd", 200, 386); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("processor.vhd", 513, 383); // cl (w, cl)
+selectCodeEditor("processor.vhd", 529, 247); // cl (w, cl)
+// Elapsed time: 41 seconds
+selectCodeEditor("processor.vhd", 503, 288); // cl (w, cl)
+selectCodeEditor("processor.vhd", 518, 281); // cl (w, cl)
+selectCodeEditor("processor.vhd", 286, 283); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("processor.vhd", 517, 278); // cl (w, cl)
+// Elapsed time: 36 seconds
+selectCodeEditor("processor.vhd", 340, 383); // cl (w, cl)
+selectCodeEditor("processor.vhd", 576, 377); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 265, 74); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 250, 406); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 412, 350); // cl (w, cl)
+selectCodeEditor("processor.vhd", 447, 247); // cl (w, cl)
+selectCodeEditor("processor.vhd", 365, 183); // cl (w, cl)
+selectCodeEditor("processor.vhd", 113, 88); // cl (w, cl)
+selectCodeEditor("processor.vhd", 80, 121); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 96, 299); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 101, 298); // cl (w, cl)
+selectCodeEditor("processor.vhd", 197, 299); // cl (w, cl)
+selectCodeEditor("processor.vhd", 396, 127); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 190, 294); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 180, 299); // cl (w, cl)
+selectCodeEditor("processor.vhd", 190, 131); // cl (w, cl)
+selectCodeEditor("processor.vhd", 361, 189); // cl (w, cl)
+selectCodeEditor("processor.vhd", 403, 302); // cl (w, cl)
+selectCodeEditor("processor.vhd", 175, 300); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectCodeEditor("processor.vhd", 601, 128); // cl (w, cl)
+selectCodeEditor("processor.vhd", 607, 130); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 75, 147); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 286, 125); // cl (w, cl)
+selectCodeEditor("processor.vhd", 201, 102); // cl (w, cl)
+selectCodeEditor("processor.vhd", 373, 159); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("processor.vhd", 159, 303); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("processor.vhd", 76, 350); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("processor.vhd", 104, 197); // cl (w, cl)
+// Elapsed time: 76 seconds
+selectCodeEditor("processor.vhd", 265, 149); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("processor.vhd", 171, 252); // cl (w, cl)
+selectCodeEditor("processor.vhd", 285, 225); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("processor.vhd", 307, 252); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 336, 253); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 324, 273); // cl (w, cl)
+selectCodeEditor("processor.vhd", 240, 280); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("processor.vhd", 219, 300); // cl (w, cl)
+selectCodeEditor("processor.vhd", 182, 282); // cl (w, cl)
+selectCodeEditor("processor.vhd", 173, 281); // cl (w, cl)
+selectCodeEditor("processor.vhd", 184, 292); // cl (w, cl)
+selectCodeEditor("processor.vhd", 219, 299); // cl (w, cl)
+selectCodeEditor("processor.vhd", 428, 305); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("processor.vhd", 177, 266); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+// Elapsed time: 70 seconds
+selectCodeEditor("processor.vhd", 196, 226); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 314, 223); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectCodeEditor("processor.vhd", 73, 182); // cl (w, cl)
+selectCodeEditor("processor.vhd", 1, 181); // cl (w, cl)
+selectCodeEditor("processor.vhd", 1, 182, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 409, 228); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 98, 251); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectCodeEditor("processor.vhd", 203, 296); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("processor.vhd", 121, 165); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("processor.vhd", 269, 177); // cl (w, cl)
+selectCodeEditor("processor.vhd", 205, 202); // cl (w, cl)
+// Elapsed time: 89 seconds
+selectCodeEditor("processor.vhd", 193, 254); // cl (w, cl)
+selectCodeEditor("processor.vhd", 229, 248); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("processor.vhd", 235, 246); // cl (w, cl)
+selectCodeEditor("processor.vhd", 239, 247); // cl (w, cl)
+selectCodeEditor("processor.vhd", 146, 252); // cl (w, cl)
+selectCodeEditor("processor.vhd", 95, 246); // cl (w, cl)
+selectCodeEditor("processor.vhd", 6, 255); // cl (w, cl)
+selectCodeEditor("processor.vhd", 0, 250); // cl (w, cl)
+selectCodeEditor("processor.vhd", 243, 246); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 190, 282); // cl (w, cl)
+selectCodeEditor("processor.vhd", 208, 287); // cl (w, cl)
+selectCodeEditor("processor.vhd", 131, 290); // cl (w, cl)
+selectCodeEditor("processor.vhd", 154, 278); // cl (w, cl)
+selectCodeEditor("processor.vhd", 207, 281); // cl (w, cl)
+selectCodeEditor("processor.vhd", 148, 296); // cl (w, cl)
+selectCodeEditor("processor.vhd", 209, 284); // cl (w, cl)
+selectCodeEditor("processor.vhd", 275, 279); // cl (w, cl)
+selectCodeEditor("processor.vhd", 207, 286); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 222, 301); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("processor.vhd", 203, 182); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 213, 219); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectCodeEditor("processor.vhd", 206, 194); // cl (w, cl)
+selectCodeEditor("processor.vhd", 164, 193); // cl (w, cl)
+selectCodeEditor("processor.vhd", 247, 199); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("processor.vhd", 413, 249); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("processor.vhd", 397, 251); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 276, 276); // cl (w, cl)
+selectCodeEditor("processor.vhd", 283, 266); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 372, 227); // cl (w, cl)
+selectCodeEditor("processor.vhd", 411, 245); // cl (w, cl)
+selectCodeEditor("processor.vhd", 261, 264); // cl (w, cl)
+selectCodeEditor("processor.vhd", 263, 266); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("processor.vhd", 403, 269); // cl (w, cl)
+selectCodeEditor("processor.vhd", 411, 246); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 341, 326); // cl (w, cl)
+selectCodeEditor("processor.vhd", 224, 318); // cl (w, cl)
+selectCodeEditor("processor.vhd", 302, 305); // cl (w, cl)
+selectCodeEditor("processor.vhd", 322, 320); // cl (w, cl)
+selectCodeEditor("processor.vhd", 340, 319); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("processor.vhd", 276, 281); // cl (w, cl)
+selectCodeEditor("processor.vhd", 274, 279); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 397, 275); // cl (w, cl)
+selectCodeEditor("processor.vhd", 291, 293); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 441, 274); // cl (w, cl)
+selectCodeEditor("processor.vhd", 403, 314); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectCodeEditor("processor.vhd", 256, 332); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 390, 329); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 298, 336); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("processor.vhd", 325, 310); // cl (w, cl)
+selectCodeEditor("processor.vhd", 393, 318); // cl (w, cl)
+selectCodeEditor("processor.vhd", 393, 318); // cl (w, cl)
+selectCodeEditor("processor.vhd", 395, 313); // cl (w, cl)
+selectCodeEditor("processor.vhd", 334, 311); // cl (w, cl)
+selectCodeEditor("processor.vhd", 294, 315); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 426, 320); // cl (w, cl)
+// Elapsed time: 27 seconds
+selectCodeEditor("processor.vhd", 43, 339); // cl (w, cl)
+// Elapsed time: 23 seconds
+selectCodeEditor("processor.vhd", 173, 351); // cl (w, cl)
+selectCodeEditor("processor.vhd", 69, 349); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 56 MB. Current time: 6/12/21, 12:38:09 PM ART
+// Elapsed time: 36 seconds
+selectCodeEditor("processor.vhd", 291, 384); // cl (w, cl)
+selectCodeEditor("processor.vhd", 654, 395); // cl (w, cl)
+selectCodeEditor("processor.vhd", 31, 397); // cl (w, cl)
+selectCodeEditor("processor.vhd", 35, 409); // cl (w, cl)
+selectCodeEditor("processor.vhd", 44, 399); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("processor.vhd", 177, 400); // cl (w, cl)
+typeControlKey((HResource) null, "processor.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 60 seconds
+selectCodeEditor("processor.vhd", 391, 314); // cl (w, cl)
+selectCodeEditor("processor.vhd", 228, 396); // cl (w, cl)
+// Elapsed time: 101 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
