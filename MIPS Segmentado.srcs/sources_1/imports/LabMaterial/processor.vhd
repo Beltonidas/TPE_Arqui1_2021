@@ -72,8 +72,8 @@ Reg_bank: p1d port map( --Connexión del banco de registros
         wr  => WB_RegWrite, --ID_PC_4
         reg1_rd => reg1_rd_rg, --reg1_rd_rg <= Instruction(25 downto 21);
         reg2_rd => reg2_rd_rg,
-        reg_wr  => reg_wr_rg,
-        data_wr => data_wr_rg,   
+        reg_wr  => reg_wr_rg,    --ACA PODRIA CONECTAR DIRECTO DEL WB?
+        data_wr => data_wr_rg,   --ACA PODRIA CONECTAR DIRECTO DEL WB?
         data1_rd => data1_rd_rg, 
         data2_rd => data2_rd_rg
     );
@@ -123,8 +123,8 @@ reg_IF_ID:      process(Clk,Reset)
 reg1_rd_rg <= Instruction(25 downto 21); --Seleccionaoms los registros
 reg2_rd_rg <= Instruction(20 downto 16);
 
-data1_rd_rg <= reg1_rd_rg;
-data2_rd_rg <= reg2_rd_rg; --Leemos los registros que anteriormente seleciconamos 
+--data1_rd_rg <= reg1_rd_rg; --ESTO ESTABA MAL, en data1_rd_rd se escribe automaticamente desde el banco
+--data2_rd_rg <= reg2_rd_rg; --Leemos los registros que anteriormente seleciconamos 
 
 --Definimos registro de escritura final
 reg_wr_rg <= reg_Destino_wb;
@@ -250,7 +250,8 @@ reg_ID_EX:  process(Clk,Reset)
                     EX_Reg_destino1 <= "00000";
                     EX_PC_4 <= x"00000000";
                     EX_data1_rd_rg <= x"00000000";
-                    EX_data2_rd_rg <= x"00000000";                    
+                    EX_data2_rd_rg <= x"00000000";  
+                    EX_sign_ext <= x"00000000";             
                 elsif(rising_edge(Clk)) then
                     EX_RegDst <= RegDst;
                     EX_ALUSrc <= ALUSrc;
@@ -265,6 +266,7 @@ reg_ID_EX:  process(Clk,Reset)
                     EX_PC_4 <= ID_PC_4;
                     EX_data1_rd_rg <= data1_rd_rg;
                     EX_data2_rd_rg <= data2_rd_rg;
+                    EX_sign_ext <= sign_ext;
                 end if;
             end process;
 -------------------------------------------------------------------------------------------------------------------------
