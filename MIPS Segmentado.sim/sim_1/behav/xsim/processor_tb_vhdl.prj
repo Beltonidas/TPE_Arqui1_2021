@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MIPS Segmentado.srcs/sources_1/imports/new/P1X.vhd" \
+"../../../../MIPS Segmentado.srcs/sources_1/imports/new/P1d.vhd" \
+"../../../../MIPS Segmentado.srcs/sources_1/imports/LabMaterial/memory.vhd" \
+"../../../../MIPS Segmentado.srcs/sources_1/imports/LabMaterial/processor.vhd" \
+"../../../../MIPS Segmentado.srcs/sources_1/imports/LabMaterial/processor_tb.vhd" \
+
+# Do not sort compile order
+nosort

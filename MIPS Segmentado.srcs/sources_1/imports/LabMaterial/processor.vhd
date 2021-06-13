@@ -264,7 +264,15 @@ begin
        MemWrite <= '0';
        Branch <= '0';
        AluOp <= "101";
-    --when others => Tener cuidado y ocnsultar por el others
+    when others => --Tener cuidado y ocnsultar por el others
+       RegDst <= '1';
+       ALUSrc <= '0';
+       MemtoReg <= '0';
+       RegWrite <= '1';
+       MemRead <= '0';
+       MemWrite <= '0';
+       Branch <= '0';
+       AluOp <= "010";
     end case;
 end process;
 
@@ -323,7 +331,9 @@ begin
                 when "100100" => ALU_ctrl <="010";
                 when "100101" => ALU_ctrl <="001";
                 when "101010" => ALU_ctrl <="111";
+                when others => ALU_ctrl <="010";
             end case;
+       when others => ALU_ctrl <="010";
     end case;
 end process;
 

@@ -105,7 +105,7 @@ begin
 
 	Instruction_Mem_inst : memory
 	generic map (
-	   C_ELF_FILENAME     => "Program1",
+	   C_ELF_FILENAME     => "D:\Documents\Vivado\Processor\MIPS Segmentado\program1",
       C_MEM_SIZE         => 1024
    )
 	port map (
@@ -119,7 +119,7 @@ begin
 	
 	Data_Mem_inst : memory
 	generic map (
-	   C_ELF_FILENAME     => "data",
+	   C_ELF_FILENAME     => "D:\Documents\Vivado\Processor\MIPS Segmentado\data",
      C_MEM_SIZE         => 1024
    )	
 	port map(
@@ -148,13 +148,4 @@ begin
 	end process;  	 
 
 end processor_tb_arq;
-
-
-configuration testbench_for_procesador of processor_tb is
-	for processor_tb_arq
-		for UUT : processor
-			use entity work.processor(processor);
-		end for;
-	end for;
-end testbench_for_procesador;
 

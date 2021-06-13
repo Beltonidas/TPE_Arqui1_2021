@@ -2,19 +2,16 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Jun 13 09:15:25 2021
-# Process ID: 10796
+# Start of session at: Fri Jun 11 22:57:26 2021
+# Process ID: 15220
 # Current directory: D:/Documents/Vivado/Processor/MIPS Segmentado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16400 D:\Documents\Vivado\Processor\MIPS Segmentado\MIPS Segmentado.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12092 D:\Documents\Vivado\Processor\MIPS Segmentado\MIPS Segmentado.xpr
 # Log file: D:/Documents/Vivado/Processor/MIPS Segmentado/vivado.log
 # Journal file: D:/Documents/Vivado/Processor/MIPS Segmentado\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.xpr}
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2019.1/data/ip'.
-open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 883.383 ; gain = 28.395
+update_compile_order -fileset sources_1
+import_files -norecurse D:/Documents/Vivado/TP0/P1X/P1X.srcs/sources_1/new/P1X.vhd
+update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
