@@ -105,7 +105,7 @@ begin
 
 	Instruction_Mem_inst : memory
 	generic map (
-	   C_ELF_FILENAME     => "D:\Documents\Vivado\Processor\MIPS Segmentado\program1",
+	   C_ELF_FILENAME     => "D:\Documents\Vivado\Processor\MIPS Segmentado\program2",
       C_MEM_SIZE         => 1024
    )
 	port map (

@@ -21,7 +21,8 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.std_logic_signed.ALL; --or unsigned
+use IEEE.STD_LOGIC_UNSIGNED.all;
+--use IEEE.std_logic_signed.ALL; --or unsigned
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values

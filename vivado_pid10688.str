@@ -1,0 +1,120 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 10688
+License: Customer
+
+Current time: 	Mon Jun 14 19:06:19 ART 2021
+Time zone: 	Argentina Standard Time (America/Buenos_Aires)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 16 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Vivado/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/Vivado/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	inaar
+User home directory: C:/Users/inaar
+User working directory: D:/Documents/Vivado/Processor/MIPS Segmentado
+User country: 	AR
+User language: 	es
+User locale: 	es_AR
+
+RDI_BASEROOT: D:/Vivado/Vivado
+HDI_APPROOT: D:/Vivado/Vivado/2019.1
+RDI_DATADIR: D:/Vivado/Vivado/2019.1/data
+RDI_BINDIR: D:/Vivado/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/inaar/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/inaar/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/inaar/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	D:/Vivado/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/Documents/Vivado/Processor/MIPS Segmentado/vivado.log
+Vivado journal file location: 	D:/Documents/Vivado/Processor/MIPS Segmentado/vivado.jou
+Engine tmp dir: 	D:/Documents/Vivado/Processor/MIPS Segmentado/.Xil/Vivado-10688-LenovoV330
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: D:/Vivado/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado/Vivado/2019.1
+XILINX_SDK: D:/Vivado/SDK/2019.1
+XILINX_VIVADO: D:/Vivado/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/Vivado/Vivado/2019.1
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 529 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  3061 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1062 ms.
+// Opening Vivado Project: D:\Documents\Vivado\Processor\MIPS Segmentado\MIPS Segmentado.xpr. Version: Vivado v2019.1 
+// HMemoryUtils.trashcanNow. Engine heap size: 534 MB. GUI used memory: 44 MB. Current time: 6/14/21, 7:06:22 PM ART
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2019.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 51 MB (+51309kb) [00:00:48]
+// [Engine Memory]: 585 MB (+462367kb) [00:00:48]
+// [GUI Memory]: 66 MB (+12675kb) [00:00:49]
+// [GUI Memory]: 89 MB (+21154kb) [00:00:52]
+// [GUI Memory]: 98 MB (+4722kb) [00:00:54]
+// WARNING: HEventQueue.dispatchEvent() is taking  13526 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1683 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1178 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 599 MB. GUI used memory: 58 MB. Current time: 6/14/21, 7:06:55 PM ART
+// Project name: MIPS Segmentado; location: D:/Documents/Vivado/Processor/MIPS Segmentado; part: xc7k70tfbv676-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 623.449 ; gain = 48.934 
+dismissDialog("Open Project"); // by (cl)
+// [Engine Memory]: 617 MB (+1906kb) [00:01:02]
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 487ms to process. Increasing delay to 3000 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 247ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 716 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_tb(processor_tb_arq) (processor_tb.vhd), UUT : processor(processor_arq) (processor.vhd)]", 2); // B (F, cl)

@@ -160,8 +160,17 @@ Reg_destino0 <= Instruction(20 downto 16);
 Reg_destino1 <= Instruction(15 downto 11);
 
 --Definicion unidad de extension de signo
-sign_ext <= x"0000" & Instruction(15 downto 0) when Instruction(15) = '0' else
-        x"FFFF" & Instruction(15 downto 0);
+process (Instruction)  
+    --Confirmar lista de sensibilidad y no haber extendido al reves, o tomado los bits que no eran (31 a 15) o (15 a 0)
+    begin
+        if (Instruction(15) = '1') then
+        sign_ext <=  x"FFFF" & Instruction(15 downto 0);
+        else
+        sign_ext <=  x"0000" & Instruction(15 downto 0);
+        end if;
+    end process;
+--sign_ext <= x"0000" & Instruction(15 downto 0) when Instruction(15) = '0' else
+--        x"FFFF" & Instruction(15 downto 0);
 
 --Definición de Unidad de control, todo va a parar al registro de segmentación (eventualmente)
 process (Instruction)

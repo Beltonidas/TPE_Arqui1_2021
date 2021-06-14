@@ -12,7 +12,6 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
-Compiling package ieee.std_logic_signed
 Compiling package ieee.std_logic_textio
 Compiling architecture behavioral of entity xil_defaultlib.p1d [p1d_default]
 Compiling architecture behavioral of entity xil_defaultlib.P1c [p1c_default]
