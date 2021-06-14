@@ -12,3 +12,16 @@
 start_gui
 open_project {D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.xpr}
 update_compile_order -fileset sources_1
+launch_simulation
+source processor_tb.tcl
+restart
+close_sim
+launch_simulation
+source processor_tb.tcl
+close_sim
+launch_simulation
+source processor_tb.tcl
+close_sim
+launch_simulation
+source processor_tb.tcl
+close_sim

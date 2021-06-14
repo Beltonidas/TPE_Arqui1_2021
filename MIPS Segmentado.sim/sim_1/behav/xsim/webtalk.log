@@ -2,8 +2,8 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Jun 12 17:17:28 2021
-# Process ID: 9036
+# Start of session at: Mon Jun 14 00:19:28 2021
+# Process ID: 17588
 # Current directory: D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim/xsim.dir/processor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim/webtalk.log
@@ -11,4 +11,4 @@
 #-----------------------------------------------------------
 source D:/Documents/Vivado/Processor/MIPS -notrace
 couldn't read file "D:/Documents/Vivado/Processor/MIPS": no such file or directory
-INFO: [Common 17-206] Exiting Webtalk at Sat Jun 12 17:17:29 2021...
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 14 00:19:29 2021...

@@ -67,7 +67,7 @@ begin
     --Data reads concurrentes
     output_1 <= x"00000000" when (reg1_rd = "00000")
     else regBank(conv_integer(reg1_rd));
-    output_1 <= x"00000000" when (reg2_rd = "00000")
+    output_2 <= x"00000000" when (reg2_rd = "00000")
     else regBank(conv_integer(reg2_rd));
     --Asigno las señales de los reads a las verdaderas salidas.
     data1_rd <= output_1;

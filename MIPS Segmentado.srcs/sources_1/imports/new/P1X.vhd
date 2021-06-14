@@ -39,12 +39,13 @@ entity P1c is
             b : in std_logic_vector (31 downto 0);
             control: in std_logic_vector (2 downto 0);
             output: out std_logic_vector (31 downto 0);
-            zero : out std_logic --No tengo claro que corno es  
+            zero : out std_logic
         );
 end P1c;
 
 architecture Behavioral of P1c is
 --ACA SE DECLARAN LAS ENTRADAS/SALIDAS UNICAMENTE (por eso los tb tienen esta parte vacia)
+signal sig_zero: std_logic;
 signal result: std_logic_vector(31 downto 0);
 begin
     process(a,b,control)
@@ -65,18 +66,9 @@ begin
         end case;
     end process;
     
-    zero <= '1' when (result = x"00000000")
+    sig_zero <= '1' when (result = x"00000000")
     else '0';
-    
-    --process (result) is
-    --begin
-      --  if (result = x"00000000") then
-        --    zero<='1';
-          --  else
-           -- zero<='0';
-        --end if;
-    --end process;
-    --¿¿¿QUE ONDA CON EL ZERO DE ALU????
-    
+
+    zero <= sig_zero;    
     output <= result;
 end Behavioral;

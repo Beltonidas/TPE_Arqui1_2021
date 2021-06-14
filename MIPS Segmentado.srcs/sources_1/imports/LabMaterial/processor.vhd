@@ -87,10 +87,11 @@ end component;
     signal WB_reg_destino: std_logic_vector (4 downto 0);
     
 ------------fin sección Write Back--------------
-begin 	
+begin
+I_DataOut <= x"00000000"; 	
 Reg_bank: p1d port map( --Connexión del banco de registros
         clk => Clk,
-        rst => rst_rg,
+        rst => Reset,
         wr  => WB_RegWrite, --ID_PC_4
         reg1_rd => reg1_rd_rg, --reg1_rd_rg <= Instruction(25 downto 21);
         reg2_rd => reg2_rd_rg,
@@ -106,10 +107,7 @@ ALU: P1c port map( --Connexión de la ALU
          control => ALU_ctrl,
          output => ALU_result,  
          zero => ALU_zero
-    );    
-
-ALU_b <= EX_data2_rd_rg when EX_ALUSrc='0' else
-        EX_sign_ext;    
+    );     
     
 --Multiplexor que elige instrucción a meter en Program Conter
 PC_next <= PC_4 when PCSrc='0' else
@@ -134,7 +132,6 @@ PC_4 <= PC+4;
 I_WrStb <= '0';
 I_RdStb <= '1'; --¿Esto es correcto para que siempre lea?
 I_Addr <= PC;
---CONFIRMAR, porque estoy escribiendo directamene a un puerto del procesador.
 --CONFIRMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR.
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -158,27 +155,13 @@ reg_IF_ID:      process(Clk,Reset)
 reg1_rd_rg <= Instruction(25 downto 21); --Seleccionaoms los registros
 reg2_rd_rg <= Instruction(20 downto 16);
 
---data1_rd_rg <= reg1_rd_rg; --ESTO ESTABA MAL, en data1_rd_rd se escribe automaticamente desde el banco
---data2_rd_rg <= reg2_rd_rg; --Leemos los registros que anteriormente seleciconamos 
-
---Definimos registro de escritura final
---data_wr_rg <= dato_reg_destino_wb;
-
 --Estos 2 los valores a elegir en el mux de la etapa EX
 Reg_destino0 <= Instruction(20 downto 16);
 Reg_destino1 <= Instruction(15 downto 11);
 
---Definición de Unidad de extensión de signo.
-process (Instruction)  
-    --Confirmar lista de sensibilidad y no haber extendido al reves, o tomado los bits que no eran (31 a 15) o (15 a 0)
-    begin
-        if (Instruction(15) = '1') then
-        sign_ext <=  x"FFFF" & Instruction(15 downto 0);
-        else
-        sign_ext <=  x"0000" & Instruction(15 downto 0);
-        end if;
-    end process;
---CONFIRMAR QUE NO HAYA HECHO COSAS AL REVES
+--Definicion unidad de extension de signo
+sign_ext <= x"0000" & Instruction(15 downto 0) when Instruction(15) = '0' else
+        x"FFFF" & Instruction(15 downto 0);
 
 --Definición de Unidad de control, todo va a parar al registro de segmentación (eventualmente)
 process (Instruction)
@@ -194,7 +177,6 @@ begin
        MemWrite <= '0';
        Branch <= '0';
        AluOp <= "010";  
-       	
    when "100011" => -- LW
        RegDst <= '0';
        ALUSrc <= '1';
@@ -328,7 +310,7 @@ begin
             case funct is
                 when "100000" => ALU_ctrl <="010";
                 when "100010" => ALU_ctrl <="110";
-                when "100100" => ALU_ctrl <="010";
+                when "100100" => ALU_ctrl <="000";
                 when "100101" => ALU_ctrl <="001";
                 when "101010" => ALU_ctrl <="111";
                 when others => ALU_ctrl <="010";
@@ -336,6 +318,10 @@ begin
        when others => ALU_ctrl <="010";
     end case;
 end process;
+
+
+ALU_b <= EX_data2_rd_rg when EX_ALUSrc='0' else
+        EX_sign_ext;  
 
 reg_destino <= EX_Reg_destino0  when EX_RegDst='0' else
                EX_Reg_destino1;
@@ -357,7 +343,8 @@ reg_EX_MEM:      process(Clk,Reset)
                         MEM_MemRead  <= '0';
                         MEM_ALU_zero <= '0';
                     elsif  (rising_edge(Clk)) then
-                        MEM_Add_result <= Add_result ;
+                        MEM_Add_result <= Add_result;
+                        MEM_ALU_zero <= ALU_zero;
                         MEM_ALU_result <= ALU_result;
                         MEM_data2_rd_rg <= EX_data2_rd_rg;
                         MEM_reg_destino <= reg_destino;
@@ -366,7 +353,6 @@ reg_EX_MEM:      process(Clk,Reset)
                         MEM_Branch <= EX_Branch;
                         MEM_MemWrite <= EX_MemWrite;
                         MEM_MemRead  <= EX_MemRead;
-                        MEM_ALU_zero <= ALU_zero;
                     end if;
                 end process;
 -------------------------------------------------------------------------------------------------------------------------

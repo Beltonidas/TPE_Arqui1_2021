@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/new/P1X.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'P1c'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/new/P1d.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'p1d'
