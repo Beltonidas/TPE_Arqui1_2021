@@ -308,7 +308,7 @@ reg_ID_EX:  process(Clk,Reset)
 -------------------------------------------------------------------------------------------------------------------------             
 -- Definición de Unidad ALU Control
 funct <= EX_sign_ext(5 downto 0);
-process (EX_sign_ext,EX_AluOp)
+process (EX_sign_ext,EX_AluOp, funct)
 begin
     --Acá la volví a manquear asignando funct y consultandolo en el mismo proceso, EL CUAL NO ES CONCURRENTE.
        case EX_AluOp is
