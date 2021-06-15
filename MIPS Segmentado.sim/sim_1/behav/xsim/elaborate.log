@@ -4,19 +4,4 @@ Running: D:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5fe3811003
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package ieee.std_logic_textio
-Compiling architecture behavioral of entity xil_defaultlib.p1d [p1d_default]
-Compiling architecture behavioral of entity xil_defaultlib.P1c [p1c_default]
-Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
-Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="D:\\Docu...]
-Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="D:\\Docu...]
-Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb
-Built simulation snapshot processor_tb_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

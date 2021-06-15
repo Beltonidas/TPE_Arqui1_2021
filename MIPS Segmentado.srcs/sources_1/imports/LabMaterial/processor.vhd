@@ -172,10 +172,11 @@ process (Instruction)
 --sign_ext <= x"0000" & Instruction(15 downto 0) when Instruction(15) = '0' else
 --        x"FFFF" & Instruction(15 downto 0);
 
+Special <= Instruction(31 downto 26);
 --Definición de Unidad de control, todo va a parar al registro de segmentación (eventualmente)
-process (Instruction)
+process (Special)
 begin
-    Special <= Instruction(31 downto 26);
+    --ASIGNABA EL SPECIAL ACÁ COMO UN PAVO, PERO ESTO NOOO ES CONCURRENTEEE
     case Special is
    when "000000" => -- R-Type
        RegDst <= '1';
@@ -259,11 +260,11 @@ begin
        RegDst <= '1';
        ALUSrc <= '0';
        MemtoReg <= '0';
-       RegWrite <= '1';
+       RegWrite <= '0';
        MemRead <= '0';
        MemWrite <= '0';
        Branch <= '0';
-       AluOp <= "010";
+       AluOp <= "011";
     end case;
 end process;
 
@@ -306,10 +307,11 @@ reg_ID_EX:  process(Clk,Reset)
 --ID/EX
 -------------------------------------------------------------------------------------------------------------------------             
 -- Definición de Unidad ALU Control
+funct <= EX_sign_ext(5 downto 0);
 process (EX_sign_ext,EX_AluOp)
 begin
-    funct <= EX_sign_ext(5 downto 0);
-    case EX_AluOp is
+    --Acá la volví a manquear asignando funct y consultandolo en el mismo proceso, EL CUAL NO ES CONCURRENTE.
+       case EX_AluOp is
        when "000" => ALU_ctrl <= "010";
        when "001" => ALU_ctrl <= "110";
        when "011" => ALU_ctrl <= "100";
@@ -331,6 +333,9 @@ end process;
 
 ALU_b <= EX_data2_rd_rg when EX_ALUSrc='0' else
         EX_sign_ext;  
+-- TEST
+--ALU_b <= EX_data2_rd_rg when EX_ALUSrc='0' else
+--         x"0000" & EX_sign_ext(15 downto 0); 
 
 reg_destino <= EX_Reg_destino0  when EX_RegDst='0' else
                EX_Reg_destino1;
@@ -396,7 +401,7 @@ reg_MEM_WB:      process(Clk,Reset)
 -------------------------------------------------------------------------------------------------------------------------
 --MEM/WB
 -------------------------------------------------------------------------------------------------------------------------
-dato_reg_destino_wb <= WB_mem_reg_data when WB_MemtoReg='0' else
+dato_reg_destino_wb <= WB_mem_reg_data when WB_MemtoReg='1' else
                        WB_ALU_result;
 
 end processor_arq;

@@ -1,0 +1,525 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun 14 19:05:01 2021
+# Process ID: 10688
+# Current directory: D:/Documents/Vivado/Processor/MIPS Segmentado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10040 D:\Documents\Vivado\Processor\MIPS Segmentado\MIPS Segmentado.xpr
+# Log file: D:/Documents/Vivado/Processor/MIPS Segmentado/vivado.log
+# Journal file: D:/Documents/Vivado/Processor/MIPS Segmentado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 623.449 ; gain = 48.934
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xelab -wto 5fe3811003714c2b92fc20d7d09f7425 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5fe3811003714c2b92fc20d7d09f7425 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 653.555 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_tb_behav -key {Behavioral:sim_1:Functional:processor_tb} -tclbatch {processor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 680.234 ; gain = 11.922
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 680.234 ; gain = 26.680
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+ERROR: Index 1024 out of bound 0 to 1023
+Time: 12900 ns  Iteration: 1  Process: /processor_tb/Instruction_Mem_inst/line__37
+  File: D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/memory.vhd
+
+HDL Line: D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/memory.vhd:82
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'processor_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xelab -wto 5fe3811003714c2b92fc20d7d09f7425 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5fe3811003714c2b92fc20d7d09f7425 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.p1d [p1d_default]
+Compiling architecture behavioral of entity xil_defaultlib.P1c [p1c_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="D:\\Docu...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="D:\\Docu...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb
+Built simulation snapshot processor_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 765.648 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_tb_behav -key {Behavioral:sim_1:Functional:processor_tb} -tclbatch {processor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 765.648 ; gain = 0.000
+run 100 ns
+run 100 ns
+ERROR: Index 30776 out of bound 0 to 1023
+Time: 1150 ns  Iteration: 1  Process: /processor_tb/Data_Mem_inst/line__37
+  File: D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/memory.vhd
+
+HDL Line: D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/memory.vhd:82
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/new/P1X.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'P1c'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xelab -wto 5fe3811003714c2b92fc20d7d09f7425 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5fe3811003714c2b92fc20d7d09f7425 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.p1d [p1d_default]
+Compiling architecture behavioral of entity xil_defaultlib.P1c [p1c_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="D:\\Docu...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="D:\\Docu...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb
+Built simulation snapshot processor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_tb_behav -key {Behavioral:sim_1:Functional:processor_tb} -tclbatch {processor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 935.227 ; gain = 0.000
+run 100 ns
+run 100 ns
+ERROR: Index 30776 out of bound 0 to 1023
+Time: 1150 ns  Iteration: 1  Process: /processor_tb/Data_Mem_inst/line__37
+  File: D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/memory.vhd
+
+HDL Line: D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/memory.vhd:82
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/new/P1X.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'P1c'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xelab -wto 5fe3811003714c2b92fc20d7d09f7425 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5fe3811003714c2b92fc20d7d09f7425 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.p1d [p1d_default]
+Compiling architecture behavioral of entity xil_defaultlib.P1c [p1c_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="D:\\Docu...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="D:\\Docu...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb
+Built simulation snapshot processor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_tb_behav -key {Behavioral:sim_1:Functional:processor_tb} -tclbatch {processor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 935.227 ; gain = 0.000
+run all
+ERROR: Index 30776 out of bound 0 to 1023
+Time: 1150 ns  Iteration: 1  Process: /processor_tb/Data_Mem_inst/line__37
+  File: D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/memory.vhd
+
+HDL Line: D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/memory.vhd:82
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/new/P1X.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'P1c'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'processor'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'processor_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xelab -wto 5fe3811003714c2b92fc20d7d09f7425 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5fe3811003714c2b92fc20d7d09f7425 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.p1d [p1d_default]
+Compiling architecture behavioral of entity xil_defaultlib.P1c [p1c_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="D:\\Docu...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="D:\\Docu...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb
+Built simulation snapshot processor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_tb_behav -key {Behavioral:sim_1:Functional:processor_tb} -tclbatch {processor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 935.227 ; gain = 0.000
+run 100 ns
+run 100 ns
+ERROR: Index 30776 out of bound 0 to 1023
+Time: 1150 ns  Iteration: 1  Process: /processor_tb/Data_Mem_inst/line__37
+  File: D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/memory.vhd
+
+HDL Line: D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/memory.vhd:82
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/new/P1X.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'P1c'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'processor'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'processor_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xelab -wto 5fe3811003714c2b92fc20d7d09f7425 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5fe3811003714c2b92fc20d7d09f7425 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.p1d [p1d_default]
+Compiling architecture behavioral of entity xil_defaultlib.P1c [p1c_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="D:\\Docu...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="D:\\Docu...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb
+Built simulation snapshot processor_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 935.227 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_tb_behav -key {Behavioral:sim_1:Functional:processor_tb} -tclbatch {processor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 935.227 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/new/P1X.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'P1c'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xelab -wto 5fe3811003714c2b92fc20d7d09f7425 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5fe3811003714c2b92fc20d7d09f7425 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.p1d [p1d_default]
+Compiling architecture behavioral of entity xil_defaultlib.P1c [p1c_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="D:\\Docu...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="D:\\Docu...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb
+Built simulation snapshot processor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_tb_behav -key {Behavioral:sim_1:Functional:processor_tb} -tclbatch {processor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 935.227 ; gain = 0.000
+run 100 ns
+run 100 ns
+ERROR: Index 30776 out of bound 0 to 1023
+Time: 1150 ns  Iteration: 1  Process: /processor_tb/Data_Mem_inst/line__37
+  File: D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/memory.vhd
+
+HDL Line: D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/LabMaterial/memory.vhd:82
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/new/P1d.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'p1d'
+ERROR: [VRFC 10-2989] 'conv_integer' is not declared [D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/new/P1d.vhd:70]
+ERROR: [VRFC 10-2989] 'conv_integer' is not declared [D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/new/P1d.vhd:72]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/new/P1d.vhd:51]
+INFO: [VRFC 10-3070] VHDL file 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.srcs/sources_1/imports/new/P1d.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 935.227 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 14 21:00:23 2021...
