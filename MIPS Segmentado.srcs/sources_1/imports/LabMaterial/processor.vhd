@@ -92,16 +92,16 @@ I_DataOut <= x"00000000";
 Reg_bank: p1d port map( --Connexión del banco de registros
         clk => Clk,
         rst => Reset,
-        wr  => WB_RegWrite, --ID_PC_4
+        wr  => WB_RegWrite,
         reg1_rd => reg1_rd_rg, --reg1_rd_rg <= Instruction(25 downto 21);
         reg2_rd => reg2_rd_rg,
         reg_wr  => WB_reg_destino,
-        data_wr => dato_reg_destino_wb,   --¿ACA PODRIA CONECTAR DIRECTO DEL WB?
+        data_wr => dato_reg_destino_wb,
         data1_rd => data1_rd_rg, 
         data2_rd => data2_rd_rg
     );
-
-ALU: P1c port map( --Connexión de la ALU
+        ---Connexión de la ALU---
+ALU: P1c port map( 
          a => EX_data1_rd_rg,
          b => ALU_b,
          control => ALU_ctrl,
@@ -117,7 +117,7 @@ PC_next <= PC_4 when PCSrc='0' else
 PC_Process:    process(Clk,Reset)
                begin
                 if (Reset = '1') then
-                    PC <= (others => '0'); --Confirmar que la sintaxis sea correcta
+                    PC <= (others => '0');
                     elsif (rising_edge(Clk)) then
                         PC <= PC_next;
                 end if;
@@ -126,14 +126,11 @@ PC_Process:    process(Clk,Reset)
 --Definición del sumador de PC+4               
 PC_4 <= PC+4;
 
--------------------------------------------------------------------------------------------------------------------------
---CONFIRMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR.
+            ---Obtención de instrucciones---
 --Manejo de I_Addr (Este puerto despues se conecta a la memoria en el TB)
 I_WrStb <= '0';
-I_RdStb <= '1'; --¿Esto es correcto para que siempre lea?
+I_RdStb <= '1';
 I_Addr <= PC;
---CONFIRMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR.
--------------------------------------------------------------------------------------------------------------------------
 
 --Definición de registro de segmentación IF/ID
 reg_IF_ID:      process(Clk,Reset) 
@@ -152,7 +149,7 @@ reg_IF_ID:      process(Clk,Reset)
 --Fetch/ID
 -------------------------------------------------------------------------------------------------------------------------
 --Desglosamos la instrucción para elegir el numero de registros
-reg1_rd_rg <= Instruction(25 downto 21); --Seleccionaoms los registros
+reg1_rd_rg <= Instruction(25 downto 21);
 reg2_rd_rg <= Instruction(20 downto 16);
 
 --Estos 2 los valores a elegir en el mux de la etapa EX
@@ -161,7 +158,6 @@ Reg_destino1 <= Instruction(15 downto 11);
 
 --Definicion unidad de extension de signo
 process (Instruction)  
-    --Confirmar lista de sensibilidad y no haber extendido al reves, o tomado los bits que no eran (31 a 15) o (15 a 0)
     begin
         if (Instruction(15) = '1') then
         sign_ext <=  x"FFFF" & Instruction(15 downto 0);
@@ -169,14 +165,11 @@ process (Instruction)
         sign_ext <=  x"0000" & Instruction(15 downto 0);
         end if;
     end process;
---sign_ext <= x"0000" & Instruction(15 downto 0) when Instruction(15) = '0' else
---        x"FFFF" & Instruction(15 downto 0);
 
-Special <= Instruction(31 downto 26);
+Special <= Instruction(31 downto 26); --Fuera de process, por no ser concurrente
 --Definición de Unidad de control, todo va a parar al registro de segmentación (eventualmente)
 process (Special)
 begin
-    --ASIGNABA EL SPECIAL ACÁ COMO UN PAVO, PERO ESTO NOOO ES CONCURRENTEEE
     case Special is
    when "000000" => -- R-Type
        RegDst <= '1';
@@ -256,7 +249,7 @@ begin
        MemWrite <= '0';
        Branch <= '0';
        AluOp <= "101";
-    when others => --Tener cuidado y ocnsultar por el others
+    when others => --Tener cuidado
        RegDst <= '1';
        ALUSrc <= '0';
        MemtoReg <= '0';
@@ -310,7 +303,6 @@ reg_ID_EX:  process(Clk,Reset)
 funct <= EX_sign_ext(5 downto 0);
 process (EX_sign_ext,EX_AluOp, funct)
 begin
-    --Acá la volví a manquear asignando funct y consultandolo en el mismo proceso, EL CUAL NO ES CONCURRENTE.
        case EX_AluOp is
        when "000" => ALU_ctrl <= "010";
        when "001" => ALU_ctrl <= "110";
@@ -330,12 +322,9 @@ begin
     end case;
 end process;
 
-
+            ---Mux conectado a la ALU---
 ALU_b <= EX_data2_rd_rg when EX_ALUSrc='0' else
         EX_sign_ext;  
--- TEST
---ALU_b <= EX_data2_rd_rg when EX_ALUSrc='0' else
---         x"0000" & EX_sign_ext(15 downto 0); 
 
 reg_destino <= EX_Reg_destino0  when EX_RegDst='0' else
                EX_Reg_destino1;

@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jun 15 18:44:48 2021
+# Process ID: 6804
+# Current directory: D:/Documents/Vivado/Processor/MIPS Segmentado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14400 D:\Documents\Vivado\Processor\MIPS Segmentado\MIPS Segmentado.xpr
+# Log file: D:/Documents/Vivado/Processor/MIPS Segmentado/vivado.log
+# Journal file: D:/Documents/Vivado/Processor/MIPS Segmentado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Documents/Vivado/Processor/MIPS Segmentado/MIPS Segmentado.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {D:/Documents/Vivado/Processor/MIPS Segmentado/processor_tb_behav1.wcfg}
+source processor_tb.tcl
+current_wave_config {processor_tb_behav1.wcfg}
+add_wave {{/processor_tb/UUT/Reg_bank/regBank}} 
+relaunch_sim
+run 100 ns
+run 100 ns
+run 100 ns
+current_wave_config {processor_tb_behav1.wcfg}
+add_wave {{/processor_tb/UUT/mem_reg_data}} 
+relaunch_sim
+current_wave_config {processor_tb_behav1.wcfg}
+add_wave {{/processor_tb/UUT/WB_mem_reg_data}} 
+relaunch_sim
+current_wave_config {processor_tb_behav1.wcfg}
+add_wave {{/processor_tb/UUT/dato_reg_destino_wb}} 
+current_wave_config {processor_tb_behav1.wcfg}
+add_wave {{/processor_tb/UUT/WB_MemtoReg}} 
+relaunch_sim
+current_wave_config {processor_tb_behav1.wcfg}
+add_wave {{/processor_tb/UUT/WB_MemtoReg}} 
+current_wave_config {processor_tb_behav1.wcfg}
+add_wave {{/processor_tb/UUT/WB_RegWrite}} 
+relaunch_sim
+save_wave_config {D:/Documents/Vivado/Processor/MIPS Segmentado/processor_tb_behav1.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/Documents/Vivado/Processor/MIPS Segmentado/processor_tb_behav1.wcfg}
+source processor_tb.tcl
+current_wave_config {processor_tb_behav1.wcfg}
+add_wave {{/processor_tb/UUT/Reg_bank}} 
+relaunch_sim
+current_wave_config {processor_tb_behav1.wcfg}
+add_wave {{/processor_tb/Data_Mem_inst/memo}} 
+relaunch_sim
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+current_wave_config {processor_tb_behav1.wcfg}
+add_wave {{/processor_tb/UUT/ALU_ctrl}} 
+current_wave_config {processor_tb_behav1.wcfg}
+add_wave {{/processor_tb/UUT/ALU_result}} 
+relaunch_sim
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/Documents/Vivado/Processor/MIPS Segmentado/processor_tb_behav1.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/Documents/Vivado/Processor/MIPS Segmentado/processor_tb_behav1.wcfg}
+source processor_tb.tcl
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+current_wave_config {processor_tb_behav1.wcfg}
+add_wave {{/processor_tb/UUT/Reg_bank/regBank}} 
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+save_wave_config {D:/Documents/Vivado/Processor/MIPS Segmentado/processor_tb_behav1.wcfg}
+close_sim
